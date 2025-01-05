@@ -7,6 +7,5 @@ done < $1
 
 echo "====="
 
-while read line; do
-  echo "$line"
-done < "$1"
+
+tr -cs 'a-zA-Z' '\n' < "$1" | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -nr | head -n 5
