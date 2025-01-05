@@ -10,6 +10,6 @@ fi
 
 while read line
 do
-reversed_line=$(echo "$line")
+reversed_line=$(echo "$line" | rev)
 echo "$reversed_line"
 done < "$input_file"
