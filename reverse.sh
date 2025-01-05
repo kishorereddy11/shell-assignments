@@ -11,5 +11,5 @@ fi
 while read line
 do
 reversed_line=$(echo "$line" | rev)
-echo "$reversed_line"
+echo "$reversed_line" >> "$out_file"
 done < "$input_file"
