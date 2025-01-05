@@ -14,9 +14,7 @@ if [ ! -f "$filename" ]; then
   exit 1
 fi
 
-longest_word="Devops is a culture
-agile is a methodology focus on software devlopement it emphasis iterate development continous feedback and cllobartion between teams to adaptive changing requiments
-DEVOPS is another hand extends behind development culture that bridge gap between development and operations . DEVOPS promtions automation ci deployment ensuring faster and most realable software delivery"
+longest_word="Devops"
 
 # Read each line from the file
 while read line; do
