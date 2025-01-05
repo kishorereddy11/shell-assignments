@@ -8,4 +8,4 @@ done < $1
 echo "====="
 
 
-tr -cs 'a-zA-Z' '\n' < "$1" | tr '[:upper:]' '[:lower:]' | sort
+tr -cs 'a-zA-Z' '\n' < "$1" | tr '[:upper:]' '[:lower:]' | sort | uniq -c
