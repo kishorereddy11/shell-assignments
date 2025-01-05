@@ -1,6 +1,6 @@
 #!/bin/bash
 
-duplicate=home/ec2-user/demo.txt
+duplicate="/home/ec2-user/demo.txt"
 
 if [ $# -ne 1 ]; then
   echo "Usage: $0 <filename>"
