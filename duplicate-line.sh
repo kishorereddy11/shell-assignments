@@ -12,4 +12,5 @@ if [ ! -f "$filename" ]; then
   exit 1
 fi
 
-echo "$(sort "$filename" | uniq -c | awk '$1 > 1 {print $1, $2}')"
+duplicate=sort "$filename" | uniq -c | awk '$1 > 1 {print $1, $2}'
+echo "$(duplicate)"
