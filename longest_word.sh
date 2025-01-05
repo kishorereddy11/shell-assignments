@@ -14,7 +14,7 @@ if [ ! -f "$filename" ]; then
   exit 1
 fi
 
-longest_word="Devops"
+longest_word=""
 
 # Read each line from the file
 while read line; do
