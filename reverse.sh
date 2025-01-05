@@ -1,5 +1,5 @@
 #!/bin/bash
-input_file="/home/ec2-user/txt"
+input_file="/home/ec2-user/text"
 out_file="/home/ec2-user/txt1"
 
 if [ ! -f "$input_file" ]
